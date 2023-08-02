@@ -1,0 +1,154 @@
+.div-nav {
+  width: 100%;
+  background-color: #e64415;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+.span-abo {
+  color: white;
+  text-decoration: underline;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+.arrow-icon {
+  font-size: 12px;
+  color: #e64415;
+
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.span-login {
+  color: #e64415;
+  background-color: white;
+  padding: 12px 1rem;
+  font-size: 14px;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.arrow-icon {
+  padding: 0.9rem 0.7rem 0.9rem 0;
+  font-size: 14px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  max-width: 60%;
+  position: relative;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.wrapper .tabs-box {
+  display: flex;
+  gap: 12px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  padding: 18px;
+  color: white;
+  align-items: center;
+}
+
+.wrapper .icon {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+}
+.icon.left {
+  display: none;
+  left: 5.49rem;
+  background: linear-gradient(90deg, rgba(31, 30, 28, 255) 70%, transparent);
+}
+
+.icon.right {
+  display: flex;
+  right: 8.7rem;
+  background: linear-gradient(-90deg, rgba(31, 30, 28, 255) 70%, transparent);
+}
+#right {
+  margin-left: 4rem;
+}
+#left {
+  margin-left: 2rem;
+}
+
+.tabs-box.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+  overflow-x: hidden;
+}
+
+.tabs-box.dragging .tab {
+  user-select: none;
+}
+
+.tabs-box .tab {
+  width: 8rem;
+  white-space: nowrap;
+  padding: 13px 20px;
+}
+.tabs-box .tab:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.icon {
+  color: white;
+}
+
+.search-icon {
+  color: white;
+  font-size: 1.3rem;
+  padding: 10px;
+  margin-right: 80px;
+  align-items: center;
+  border-left: dashed white 1px;
+}
+
+.search-icon-div {
+  margin-left: 5rem;
+  align-items: center;
+}
+
+.menu-icon {
+  padding-right: 20px;
+}
+
+.a-time {
+  color: rgb(156, 156, 156);
+}
+
+.nav-link:hover {
+  color: rgb(156, 156, 156);
+}
+
+@media (min-height: 844px) {
+  .span-login {
+    display: none;
+  }
+  .span-abo {
+    display: none;
+  }
+  .div-nav {
+    width: 130%;
+  }
+  .spiegel-logo img {
+    margin-left: 5rem;
+  }
+  .wrapper {
+    display: none;
+  }
+}

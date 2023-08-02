@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;700;900&display=swap");
+
+body {
+  background-color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  color: white;
+}
+
+.nav-links > div {
+  width: 60%;
+}
+.nav-links {
+  width: 60%;
+  padding-top: 20px;
+  display: flex;
+}
+.nav-links > div {
+  margin-right: 2rem;
+  padding: 20px;
+}
+
+.nav-middle-link {
+  border-left: dashed 1px white;
+  border-right: dashed 1px white;
+}
+
+main {
+  height: 120vh;
+  background-color: black;
+}
+
+header {
+  background-color: rgba(31, 30, 28, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 5rem;
+}
+
+nav {
+  width: 60%;
+  max-width: 100vh;
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #e64415;
+  padding: 18px;
+  justify-content: space-between;
+  z-index: 10;
+  transition: 0.4s ease-in-out;
+}
+
+.spiegel-logo img {
+  width: 220px;
+}
+
+nav.sticky {
+  padding: 5px 100px;
+  transition: 0.6s ease-in-out;
+}
+
+nav.sticky .spiegel-logo img {
+  width: 150px;
+}
+
+.spiegel-logo {
+  display: flex;
+}
+.ham-menu {
+  display: none;
+  cursor: pointer;
+}
